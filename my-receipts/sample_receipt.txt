@@ -1,0 +1,2 @@
+Vendor: Cafe
+Total: 10.00

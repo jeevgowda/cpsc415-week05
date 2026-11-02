@@ -1,0 +1,20 @@
+[
+  {
+    "name": "mug-01-front",
+    "prompt": "Product photograph for an online listing: a white ceramic coffee mug with a curved handle on the right, front view at eye level, centered, on a plain white background, soft studio light. The word \"MORNING\" is printed on the side of the mug in clear black capital letters, facing the camera. Show only the product. No people, no hands, no logos, no other text.",
+    "seed": 6101,
+    "requirements": [
+      "There is exactly one mug in the image",
+      "The mug is white",
+      "The mug has a handle",
+      "The background is plain white"
+    ],
+    "expected_text": "MORNING",
+    "model": "google/gemini-3.1-flash-lite-image",
+    "aspect_ratio": "1:1",
+    "file": "mug-01-front.jpg",
+    "media_type": "image/jpeg",
+    "cost": 0.03362,
+    "seconds": 4.5
+  }
+]

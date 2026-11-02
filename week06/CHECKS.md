@@ -69,11 +69,20 @@ only on the literal "exactly one mug", and even there it was pointing at the rea
 
 ### The open-ended critique
 
-_(pending: run in my own terminal)_
+**Not run by the submission time.** The lab asks for it in my own terminal, outside the agent, and I did not
+get to it before tagging. When I run it ("Critique this product photo for an online listing. What is wrong
+with it?" on mug-04 with `minimax/minimax-m3`), its claims will be checked against the checklist verdicts and
+the images here.
 
 ### Which check caught what
 
-_(pending)_
+The second model caught what the first critic missed: MiMo flagged the two-handled mugs (03, 04) and the
+straight-on shot (04) that MiniMax passed, and the code's `--compare` turned that into a list of three images to
+look at. The narrow title read compared in code caught nothing this time, because FLUX spelled "MORNING"
+correctly on all five and both models read it correctly, but it is the only check that would catch a
+one-letter misspelling. A person looking was still needed to decide each disagreement (MiMo was right about
+the defect but filed it under "exactly one mug"), so for Team Project 1's critique path I would keep the
+second-model comparison feeding a human review list, which is what the team spec already chose.
 
 ## Review
 
@@ -99,7 +108,9 @@ output or an approval; this PR is the one that carries my image set and goes thr
 - The pass-3 test is not redundant. Without it, the parametrized test passes on the basket manifest alone, and
   it is the test that went red first.
 
-**Last exit code:** _(pending)_. **Approved by:** _(pending: teammate approval on GitHub)_.
+**Last exit code:** **0** (`minimax/minimax-m3`, the default reviewer; the MiMo second opinion exited 2 on
+format, as above). **Approved by:** approval requested from a teammate on the PR. **Pending** at submission
+time; the PR is open and merges after approval (the lab: "open the PR now and merge later").
 
 ## Cost
 
